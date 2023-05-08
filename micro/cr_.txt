@@ -1,0 +1,2 @@
+#!/bin/sh
+echo "script executed" $(date + `%s`) > /home/fan/ct/cronta_$(date + `%s`).txt
