@@ -1,15 +1,13 @@
-<<<<<<< HEAD
 files_class.sh
 filescript.sh
 file_dash.sh
 create_file.sh
-
 maharaja.sh
-
 micro\*.sh
-
-=======
 file_1.txt
 file_2.txt
 file_3.txt
->>>>>>> 075afc431cd6e540ca62ac902b7fe145f7cb084a
+even_odd.sh
+file_1.txt
+file_2.txt
+file_3.txt

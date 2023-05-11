@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 files_class.sh
 filescript.sh
 =======
@@ -9,6 +10,8 @@ files_class.sh
 filescript.sh
 
 >>>>>>> a663495c836a27d774a38bfd0b30add0bc323024
+=======
+>>>>>>> 283c3dadca630cde773eefa7aa41e6f319a771a4
 this
 file15.txt
 git
@@ -17,6 +20,9 @@ file11.txt
 file22.txt
 file33.txt
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 4665cf711d22148c8692428f40249718616fa27e
 =======
 >>>>>>> a663495c836a27d774a38bfd0b30add0bc323024
+=======
+>>>>>>> 283c3dadca630cde773eefa7aa41e6f319a771a4
