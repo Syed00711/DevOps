@@ -9,3 +9,4 @@ do
 echo $var
 
 done
+echo "hlo"
