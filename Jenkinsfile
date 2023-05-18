@@ -38,6 +38,9 @@ pipeline {
          failure { 
             echo 'FAILURE'
         }
+        changed { 
+            echo 'FAILURE'
+        }
     }
     
 }
