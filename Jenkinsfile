@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'LINUX'}
+    agent {label 'LOCAL'}
 
     stages {
         stage('Build') {
