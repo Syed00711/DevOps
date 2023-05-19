@@ -13,18 +13,7 @@ pipeline {
     writeFile file: 'abc.sh', text: 'ls -lrt'
     sshScript remote: remote, script: "abc.sh"
   }
-}
-  
+
         }
-        stage('Test') {
-            steps {
-                echo 'Testing1..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying1....'
-            }
-        }
-    }
+     
 }
