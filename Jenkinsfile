@@ -1,8 +1,4 @@
-pipeline {
-    agent any
-
-    stages {
-        node{
+       node{
   def remote = [:]
   remote.name = 'oraclevm'
   remote.host = '152.67.160.182'
@@ -14,5 +10,3 @@ pipeline {
     sshScript remote: remote, script: "abc.sh"
   }     
         }
-}
-}
