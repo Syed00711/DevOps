@@ -30,7 +30,7 @@ pipeline {
          stage('Build3') {
              when {
                  not{
-                branch "fecth_branch"
+                branch "devops"
                  }
              }
             steps {
