@@ -21,8 +21,8 @@ pipeline {
             }
         }
          stage('Build3') {
-             when not{
-                 branch "fecth_branch"
+             when {
+                not branch "fecth_branch"
              }
             steps {
                 echo 'Building..'
