@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
              
-                echo 'Building..'
+                sh "printenv | sort"
             }
         }
          stage('Build1') {
