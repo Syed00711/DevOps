@@ -1,4 +1,4 @@
-       node{
+    /*   node{
   def remote = [:]
   remote.name = 'oraclevm'
   remote.host = '152.67.160.182'
@@ -9,4 +9,17 @@
     writeFile file: 'abc.sh', text: 'ls -lrt'
     sshScript remote: remote, script: "abc.sh"
   }     
-        }
+        }*/
+pipeline{
+ agent any
+       environment{
+        microcare='academy'      
+       }
+       stages{
+              stage('build'){
+                     steps{
+                            echo '${microcare}'   
+                     }
+              }
+       }
+}
