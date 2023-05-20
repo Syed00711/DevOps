@@ -13,11 +13,17 @@ pipeline {
             }
         }
          stage('Build2') {
+              when{
+                 branch "master"
+             }
             steps {
                 echo 'Building..'
             }
         }
          stage('Build3') {
+             when{
+                 branch "fecth_branch"
+             }
             steps {
                 echo 'Building..'
             }
