@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    paramters{
+    parameters{
      string(microcare:'academy',devops:'customparams')   
     }
     stages {
@@ -12,8 +12,8 @@ pipeline {
         }
          stage('Build1') {
             steps {
-                echo '${microcare}'
-                echo '${devops}'
+                echo '${params.microcare}'
+                echo '${params.devops}'
             }
         }
          stage('Build2') {
