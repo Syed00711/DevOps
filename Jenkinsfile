@@ -14,7 +14,7 @@ pipeline {
         }
          stage('Build2') {
               when{
-                  not{
+                  not {
                  branch "master"
                   }
              }
