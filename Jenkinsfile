@@ -21,7 +21,7 @@ pipeline {
             }
         }
          stage('Build3') {
-             when{
+             when not{
                  branch "fecth_branch"
              }
             steps {
