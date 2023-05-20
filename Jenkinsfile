@@ -14,7 +14,9 @@ pipeline {
         }
          stage('Build2') {
               when{
+                  not{
                  branch "master"
+                  }
              }
             steps {
                 echo 'Building..'
