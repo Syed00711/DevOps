@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters{
-     string(microcare:'academy',devops:'customparams')   
+     string(name:'microcare',defaultValue:'academy')   
     }
     stages {
         stage('Build') {
