@@ -1,8 +1,8 @@
 pipeline {
     agent any
-    environment{
-        microcare ='academy'
-        devops ='customvariables'
+    environment {
+        MICRO = 'academy'
+   
     }
     stages {
         stage('Build') {
@@ -13,8 +13,7 @@ pipeline {
         }
          stage('Build1') {
             steps {
-                echo '${env.microcare}'
-                echo '${env.devops}'
+                echo '${MICRO}'
             }
         }
          stage('Build2') {
