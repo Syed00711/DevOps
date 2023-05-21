@@ -13,8 +13,8 @@ pipeline {
         }
          stage('Build1') {
             steps {
-                echo '${microcare}'
-                echo '${devops}'
+                echo '${env.microcare}'
+                echo '${env.devops}'
             }
         }
          stage('Build2') {
