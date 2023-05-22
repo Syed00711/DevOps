@@ -15,8 +15,9 @@ pipeline {
          stage('Build1') {
             steps {
                 echo "${env.MICRO}"
-               sh 'echo %env.GIT_CRED%'
-              // echo "${env.GIT_CRED_PSW}"
+                def password = ${GIT_CRED_PSW}
+             //  sh 'echo %env.GIT_CRED%'
+              echo "${password}"
                 echo "${env.GIT_CRED_USR}"
             }
         }
