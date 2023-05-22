@@ -15,7 +15,8 @@ pipeline {
          stage('Build1') {
             steps {
                 echo "${env.MICRO}"
-                echo "${env.GIT_CRED}"
+               // echo "${env.GIT_CRED_PSW}"
+                echo "${env.GIT_CRED_USR}"
             }
         }
          stage('Build2') {
