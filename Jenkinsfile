@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         MICRO = 'academy'
-       GIT_CRED = credentials('gittoken')
+       GIT_CRED = credentials('gittoken') //username:password
     }
     stages {
         stage('Build') {
@@ -15,7 +15,7 @@ pipeline {
          stage('Build1') {
             steps {
                 echo "${env.MICRO}"
-               // echo "${env.GIT_CRED_PSW}"
+               echo "${env.GIT_CRED_PSW}"
                 echo "${env.GIT_CRED_USR}"
             }
         }
