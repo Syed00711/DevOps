@@ -13,7 +13,7 @@ pipeline {
         }
          stage('Build1') {
             steps {
-                echo "${env.MICRO}"
+                echo 'building'
             }
         }
          stage('Build2') {
