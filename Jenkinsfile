@@ -18,4 +18,7 @@ node{
    stage('Remote SSH 2') {
    sshScript remote: remote, script: "./micro/print.sh"
   }  
+  stage('Remote SSH 3') {
+   sshScript remote: remote, script: "./micro/args.sh"
+  }  
         }
