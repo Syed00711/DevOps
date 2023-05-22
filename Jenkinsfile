@@ -8,12 +8,13 @@ pipeline {
         stage('Build') {
             steps {
                 echo "${USER}"
+              //  bat('set')
               //  sh "printenv | sort"
             }
         }
          stage('Build1') {
             steps {
-                echo 'building'
+                echo "${env.MICRO}"
             }
         }
          stage('Build2') {
@@ -33,7 +34,7 @@ pipeline {
                  }
              }
             steps {
-                echo 'Building..'
+                echo  echo "${env.MICRO}"
             }
         }
     }
