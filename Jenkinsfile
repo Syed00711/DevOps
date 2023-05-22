@@ -6,6 +6,9 @@ node{
   remote.user = 'opc'
   remote.password = 'Muzammil073#'
   remote.allowAnyHosts = true
+    stage('checkout') {
+           checkout scm
+  }  
   stage('Remote SSH') {
    // writeFile file: 'abc.sh', text: 'ls -lrt'
    // sshScript remote: remote, script: "abc.sh"
