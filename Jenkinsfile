@@ -34,7 +34,7 @@ pipeline {
                  }
              }
             steps {
-                echo  echo "${env.MICRO}"
+                 echo "${env.MICRO}"
             }
         }
     }
